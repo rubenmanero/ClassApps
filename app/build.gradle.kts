@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.ruben.classapps"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ruben.classapps"
@@ -50,6 +50,12 @@ dependencies {
     //Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    //Picasso
+    implementation (libs.picasso)
+
+    //DataStore
+    implementation (libs.androidx.datastore.preferences)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

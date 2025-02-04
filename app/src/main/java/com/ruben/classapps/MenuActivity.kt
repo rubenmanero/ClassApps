@@ -9,6 +9,7 @@ import com.ruben.classapps.BoardgamesApp.BoardgamesActivity
 import com.ruben.classapps.HelloApp.MainActivity
 import com.ruben.classapps.IMCapp.IMCactivity
 import com.ruben.classapps.MessageApp.MessageActivity
+import com.ruben.classapps.Settings.SettingsActivity
 import com.ruben.classapps.SuperheroApp.SuperheroListActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -22,12 +23,14 @@ class MenuActivity : AppCompatActivity() {
         var btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
         var btnBoardgamesApp = findViewById<Button>(R.id.btnBoardgamesApp)
         var btnSuperheroApp = findViewById<Button>(R.id.btnSuperheroApp)
+        var btnSettings = findViewById<Button>(R.id.btnSettings)
 
         btnHelloApp.setOnClickListener { navigateToHelloApp() }
         btnMessageApp.setOnClickListener { navigateToMessageApp() }
         btnIMCApp.setOnClickListener { navigateToIMCApp() }
         btnBoardgamesApp.setOnClickListener { navigateToBoardgamesApp() }
         btnSuperheroApp.setOnClickListener { navigateToSuperheroApp() }
+        btnSettings.setOnClickListener { navigateToSettings() }
     }
 
     private fun navigateToHelloApp() {
@@ -52,6 +55,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToSuperheroApp() {
         var intent = Intent(this, SuperheroListActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToSettings() {
+        var intent = Intent(this, SettingsActivity::class.java)
         startActivity(intent)
     }
 }
