@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassApps">
         <activity
-            android:name=".ReplyActivity"
+            android:name=".IMCapp.IMCActivity"
             android:exported="false" />
         <activity
-            android:name=".MessageActivity"
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +24,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HelloActivity"
+            android:name=".MessageApp.ReplyActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MessageApp.MessageActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".HelloApp.HelloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelloApp.MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
