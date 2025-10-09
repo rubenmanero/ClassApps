@@ -1,11 +1,15 @@
 package com.ruben.classapps.HelloApp
 
 import android.content.Intent
+import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
+import androidx.core.view.WindowInsetsCompat
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
 import com.ruben.classapps.R
 
 class MainActivity : AppCompatActivity() {
