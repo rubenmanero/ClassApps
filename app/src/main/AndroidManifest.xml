@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassApps">
         <activity
+            android:name=".BoardgamesApp.BoardgamesActivity"
+            android:theme="@style/Theme.BoardgamesApp"
+            android:exported="false" />
+        <activity
             android:name=".IMCapp.ResultActivity"
             android:exported="false" />
         <activity
