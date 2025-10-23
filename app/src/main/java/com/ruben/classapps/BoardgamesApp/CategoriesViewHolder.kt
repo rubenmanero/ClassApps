@@ -21,7 +21,7 @@ class CategoriesViewHolder (view: View) : RecyclerView.ViewHolder(view) {
                 divider.setBackgroundColor(getColor(divider.context, R.color.bgapp_euro_category))
             }
             GameCategory.LCG -> {
-                tvCategoryName.text = "Living Card Games"
+                tvCategoryName.text = "LCG"
                 divider.setBackgroundColor(getColor(divider.context, R.color.bgapp_lcg_category))
             }
             GameCategory.Legacy -> {

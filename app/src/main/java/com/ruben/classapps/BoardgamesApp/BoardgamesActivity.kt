@@ -5,10 +5,28 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ruben.classapps.BoardgamesApp.GameCategory.*
 import com.ruben.classapps.R
 
 class BoardgamesActivity : AppCompatActivity() {
+
+    private val categories = listOf(
+        Euro,
+        Deckbuilding,
+        LCG,
+        Legacy,
+        Cooperative
+    )
+
+    private val games = listOf<Game>(
+        Game("Frostpunk", Cooperative),
+        Game("Caverna", Euro),
+        Game("Arkham Horror", LCG),
+        Game("Gloomhaven", Legacy),
+        Game("Hero Realms", Deckbuilding),
+    )
 
     private lateinit var rvCategories: RecyclerView
     private lateinit var rvGames: RecyclerView
@@ -30,7 +48,12 @@ class BoardgamesActivity : AppCompatActivity() {
 
     private fun initUI() {
         categoriesAdapter = CategoriesAdapter(categories)
-        gamesAdapter = GamesAdapter()
+        rvCategories.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvCategories.adapter = categoriesAdapter
+
+        gamesAdapter = GamesAdapter(games)
+        rvGames.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        rvGames.adapter = gamesAdapter
     }
 
     private fun initComponents() {

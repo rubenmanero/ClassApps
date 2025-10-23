@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/viewContainer"
+    android:layout_marginHorizontal="4dp"
     app:cardBackgroundColor="@color/bgapp_background_card"
     app:cardCornerRadius="16dp">
 
