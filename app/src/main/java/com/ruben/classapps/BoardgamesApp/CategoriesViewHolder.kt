@@ -2,6 +2,7 @@ package com.ruben.classapps.BoardgamesApp
 
 import android.view.View
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import com.ruben.classapps.R
@@ -9,8 +10,9 @@ import com.ruben.classapps.R
 class CategoriesViewHolder (view: View) : RecyclerView.ViewHolder(view) {
     private val tvCategoryName: TextView = view.findViewById<TextView>(R.id.tvGameCategory)
     private val divider: View = view.findViewById<View>(R.id.divider)
+    private val viewContainer: CardView = view.findViewById(R.id.viewContainer)
 
-    fun render (gameCategory: GameCategory) {
+    fun render (gameCategory: GameCategory, onItemSelected: (Int) -> Unit) {
         when(gameCategory){
             GameCategory.Cooperative -> {
                 tvCategoryName.text = "Cooperativos"
@@ -33,5 +35,13 @@ class CategoriesViewHolder (view: View) : RecyclerView.ViewHolder(view) {
                 divider.setBackgroundColor(getColor(divider.context, R.color.bgapp_deckbuilding_category))
             }
         }
+
+        val color = if (gameCategory.isSelected) {
+            R.color.bgapp_background_card
+        } else {
+            R.color.bgapp_background_disabled
+        }
+        viewContainer.setCardBackgroundColor(getColor(viewContainer.context, color))
+        itemView.setOnClickListener { onItemSelected(layoutPosition) }
     }
 }

@@ -26,11 +26,13 @@ class MenuActivity : AppCompatActivity() {
         var btnMessageApp = findViewById<Button>(R.id.btnMessageApp)
         var btnImcApp = findViewById<Button>(R.id.btnImcApp)
         var btnBoardgamesApp = findViewById<Button>(R.id.btnBoardgamesApp)
+        var btnColorsApp = findViewById<Button>(R.id.btnColorsApp)
 
         btnHelloApp.setOnClickListener{ navigateToHelloApp() }
         btnMessageApp.setOnClickListener{ navigateToMessageApp() }
         btnImcApp.setOnClickListener{ navigateToImcApp() }
         btnBoardgamesApp.setOnClickListener{ navigateToBoardgamesApp() }
+        btnColorsApp.setOnClickListener{ navigateToColorsApp() }
     }
 
     private fun navigateToHelloApp() {
@@ -47,6 +49,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToBoardgamesApp() {
         var intent = Intent(this, BoardgamesActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToColorsApp() {
+        var intent = Intent(this, ColorsActivity::class.java)
         startActivity(intent)
     }
 }

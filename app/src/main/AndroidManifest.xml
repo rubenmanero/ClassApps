@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassApps">
         <activity
-            android:name=".BoardgamesApp.BoardgamesActivity"
-            android:theme="@style/Theme.BoardgamesApp"
+            android:name=".ColorsApp.ColorsActivity"
             android:exported="false" />
+        <activity
+            android:name=".BoardgamesApp.BoardgamesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BoardgamesApp" />
         <activity
             android:name=".IMCapp.ResultActivity"
             android:exported="false" />
