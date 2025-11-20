@@ -12,6 +12,7 @@ import com.ruben.classapps.ColorsApp.ColorsActivity
 import com.ruben.classapps.HelloApp.MainActivity
 import com.ruben.classapps.IMCapp.IMCActivity
 import com.ruben.classapps.MessageApp.MessageActivity
+import com.ruben.classapps.SuperheroApp.SuperheroListActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,12 +29,14 @@ class MenuActivity : AppCompatActivity() {
         var btnImcApp = findViewById<Button>(R.id.btnImcApp)
         var btnBoardgamesApp = findViewById<Button>(R.id.btnBoardgamesApp)
         var btnColorsApp = findViewById<Button>(R.id.btnColorsApp)
+        var btnSuperheroApp = findViewById<Button>(R.id.btnSuperheroApp)
 
         btnHelloApp.setOnClickListener{ navigateToHelloApp() }
         btnMessageApp.setOnClickListener{ navigateToMessageApp() }
         btnImcApp.setOnClickListener{ navigateToImcApp() }
         btnBoardgamesApp.setOnClickListener{ navigateToBoardgamesApp() }
         btnColorsApp.setOnClickListener{ navigateToColorsApp() }
+        btnSuperheroApp.setOnClickListener{ navigateToSuperheroApp() }
     }
 
     private fun navigateToHelloApp() {
@@ -54,6 +57,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToColorsApp() {
         var intent = Intent(this, ColorsActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToSuperheroApp() {
+        var intent = Intent(this, SuperheroListActivity::class.java)
         startActivity(intent)
     }
 }
