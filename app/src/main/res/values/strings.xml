@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ClassApps</string>
     <string name="write_name">Escribe tu nombre:</string>
+
+    <!--IMCApp-->
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
     <string name="height">Altura</string>
@@ -18,6 +20,8 @@
     <string name="description_sobrepeso">Estás por encima de lo óptimo para tu peso y altura.</string>
     <string name="title_obesidad">Obesidad</string>
     <string name="description_obesidad">Estás MUY por encima de lo óptimo para tu peso y altura.</string>
+
+    <!--BoardgamesApp-->
     <string name="boardgames">Juegos de mesa</string>
     <string name="categories">Categorías</string>
     <string name="games">Juegos</string>
@@ -28,4 +32,23 @@
     <string name="dialog_lcg_category">Living Card Games</string>
     <string name="dialog_legacy_category">Legacy</string>
     <string name="dialog_newgame_button">Nuevo juego</string>
+
+    <!--ColorsApp-->
+    <string name="tvH1">H1 (20%)</string>
+    <string name="tvH2">H2 (50%)</string>
+    <string name="tvH3">H3 (80%)</string>
+    <string name="tvV1">V1 (20%)</string>
+    <string name="tvV2">V2 (35%)</string>
+    <string name="tvV3">V3 (50%)</string>
+    <string name="tvV4">V4 (65%)</string>
+    <string name="tvV5">V5 (80%)</string>
+    <string name="white">Blanco</string>
+    <string name="red">Rojo</string>
+    <string name="orange">Naranja</string>
+    <string name="yellow">Amarillo</string>
+    <string name="green">Verde</string>
+    <string name="cyan">Cián</string>
+    <string name="blue">Azul</string>
+    <string name="violet">Violeta</string>
+    <string name="black">Negro</string>
 </resources>

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.ruben.classapps.BoardgamesApp.BoardgamesActivity
+import com.ruben.classapps.ColorsApp.ColorsActivity
 import com.ruben.classapps.HelloApp.MainActivity
 import com.ruben.classapps.IMCapp.IMCActivity
 import com.ruben.classapps.MessageApp.MessageActivity
