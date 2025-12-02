@@ -42,6 +42,7 @@
     <string name="tvV3">V3 (50%)</string>
     <string name="tvV4">V4 (65%)</string>
     <string name="tvV5">V5 (80%)</string>
+
     <string name="white">Blanco</string>
     <string name="red">Rojo</string>
     <string name="orange">Naranja</string>
@@ -51,4 +52,5 @@
     <string name="blue">Azul</string>
     <string name="violet">Violeta</string>
     <string name="black">Negro</string>
+    <string name="gray">Gris</string>
 </resources>

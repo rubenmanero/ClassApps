@@ -12,7 +12,9 @@ import com.ruben.classapps.ColorsApp.ColorsActivity
 import com.ruben.classapps.HelloApp.MainActivity
 import com.ruben.classapps.IMCapp.IMCActivity
 import com.ruben.classapps.MessageApp.MessageActivity
+import com.ruben.classapps.RepasoApp.RepasoActivity
 import com.ruben.classapps.SuperheroApp.SuperheroListActivity
+import com.ruben.classapps.examen_2024.examen24
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,8 @@ class MenuActivity : AppCompatActivity() {
         var btnBoardgamesApp = findViewById<Button>(R.id.btnBoardgamesApp)
         var btnColorsApp = findViewById<Button>(R.id.btnColorsApp)
         var btnSuperheroApp = findViewById<Button>(R.id.btnSuperheroApp)
+        var btnRepasoApp = findViewById<Button>(R.id.btnRepasoApp)
+        var btnExamen24App = findViewById<Button>(R.id.btnExamen24App)
 
         btnHelloApp.setOnClickListener{ navigateToHelloApp() }
         btnMessageApp.setOnClickListener{ navigateToMessageApp() }
@@ -37,6 +41,8 @@ class MenuActivity : AppCompatActivity() {
         btnBoardgamesApp.setOnClickListener{ navigateToBoardgamesApp() }
         btnColorsApp.setOnClickListener{ navigateToColorsApp() }
         btnSuperheroApp.setOnClickListener{ navigateToSuperheroApp() }
+        btnRepasoApp.setOnClickListener{ navigateToRepasoApp() }
+        btnExamen24App.setOnClickListener{ navigateToExamen24App() }
     }
 
     private fun navigateToHelloApp() {
@@ -61,6 +67,14 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToSuperheroApp() {
         var intent = Intent(this, SuperheroListActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToRepasoApp() {
+        var intent = Intent(this, RepasoActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToExamen24App() {
+        var intent = Intent(this, examen24::class.java)
         startActivity(intent)
     }
 }

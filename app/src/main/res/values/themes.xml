@@ -22,5 +22,12 @@
         <item name="android:layout_marginHorizontal" tools:targetApi="o">32dp</item>
     </style>
 
+    <style name="RepasoTextView">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>

@@ -89,4 +89,19 @@
     <color name="black50">#80000000</color>
     <color name="black65">#A6000000</color>
     <color name="black80">#CC000000</color>
+
+    <!--RepasoApp-->
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF6F00</color>
+    <color name="yellow">#FFC400</color>
+    <color name="green">#1AFF00</color>
+    <color name="cyan">#00FFEA</color>
+    <color name="blue">#0026FF</color>
+    <color name="violet">#E600FF</color>
+    <color name="gray">#474747</color>
+
+
+    <color name="examtitle">#FFA726</color>
+    <color name="player1">#29B6F6</color>
+    <color name="player2">#F6295C</color>
 </resources>

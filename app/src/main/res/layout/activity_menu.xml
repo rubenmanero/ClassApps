@@ -62,4 +62,22 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"/>
 
+    <Button
+        android:id="@+id/btnRepasoApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Repaso App"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnExamen24App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Examen24"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
+
 </LinearLayout>
